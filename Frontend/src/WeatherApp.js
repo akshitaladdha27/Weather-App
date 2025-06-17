@@ -7,7 +7,7 @@ const WeatherApp = () => {
   const [error, setError] = useState(null);
   const [bgClass, setBgClass] = useState("clear");
 
-  const API_KEY = "9968c722bcbf425688883842251606";
+  const API_KEY = process.env.REACT_APP_API_KEY;
 
   const getWeather = async () => {
     if (!city) return;
